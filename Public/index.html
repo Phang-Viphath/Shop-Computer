@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Tailwind css</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="Phath" href="me1.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="sticky top-0 w-full z-50">
+        <nav class="bg-white shadow-md p-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <div class="text-2xl font-bold text-black flex">
+                    <span>WIX</span>
+                    <div class="hidden md:flex space-x-6 justify-center ml-10">
+                        <a href="#" class="textbar">Product</a>
+                        <a href="#" class="textbar">Solutions</a>
+                        <a href="#" class="textbar">Resources</a>
+                        <a href="#" class="textbar">Pricing</a>
+                        <a href="#" class="textbar">Wix Studio</a>
+                        <a href="#" class="textbar">Enterprise</a>                    
+                    </div>                           
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-sm text-gray-700">Log In</a>
+                    <a href="#" class="bg-blue-500 text-white py-2 px-4 rounded-lg text-sm font-semibold hover:bg-blue-600">Get Started</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="flex flex-col space-y-4 p-4">
+                    <a href="#" class="text-lg font-medium text-gray-700">Product</a>
+                    <a href="#" class="text-lg font-medium text-gray-700">Solutions</a>
+                    <a href="#" class="text-lg font-medium text-gray-700">Resources</a>
+                    <a href="#" class="text-lg font-medium text-gray-700">Pricing</a>
+                    <a href="#" class="text-lg font-medium text-gray-700">Wix Studio</a>
+                    <a href="#" class="text-lg font-medium text-gray-700">Enterprise</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="py-8">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl font-bold text-gray-900 mb-4 px-4 sm:px-6 lg:px-8">
+                Pick the Website Template You Love
+            </h1>            
+            <div>
+                <input type="text" placeholder="Search all templates..." class="sm:w-3/4 md:w-1/2 lg:w-400 px-3 py-3 pl-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            </div>
+        </div>
+        <div class="w-full pt-6 pb-6">
+
+            <nav class="border border-gray-300 flex justify-between px-4">
+                <ul class="hidden xl:flex flex-wrap justify-center space-x-6 text-sm font-medium text-gray-700 py-3 sm:px-10">
+                    <li class="relative group">
+                        <a href="#" class="hover:text-blue-500 transition-all">Business & Services</a>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="hover:text-blue-500 transition-all">Store</a>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="hover:text-blue-500 transition-all">Creative</a>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="hover:text-blue-500 transition-all">Community</a>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="hover:text-blue-500 transition-all">Blog</a>
+                    </li>
+                </ul>
+        
+                <ul class="flex flex-wrap justify-center space-x-6 text-sm font-medium text-gray-700 py-3 px-0 sm:px-10">
+                    <li>
+                        <a href="#" class="text-blue-500 hover:text-gray-600 transition-all">All Templates</a>
+                    </li>
+                    <li class="border-l border-gray-300"></li>
+                    <li>
+                        <a href="#" class="hover:text-blue-500 transition-all">Blank Templates</a>
+                    </li>
+                    <li class="border-l border-gray-300"></li>
+                    <li class="relative group">
+                        <a href="#" class="hover:text-blue-500 transition-all">Collections</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>                                     
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-10">All Website Templates</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-5">
+                <div class="border rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images-wixmp-530a50041672c69d335ba4cf.wixmp.com/templates/image/dd4d72ee00b5434bac35d45bc50b315a.jpg/v1/fill/w_1076%2Ch_606%2Cq_90%2Cusm_0.60_1.00_0.01/dd4d72ee00b5434bac35d45bc50b315a.webp" alt="Template 1" class="w-full h-72 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Coming Soon Landing Page</h3>
+                        <p class="text-gray-600">A simple landing page indicating the site is under construction.</p>
+                    </div>
+                </div>
+                <div class="border rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images-wixmp-530a50041672c69d335ba4cf.wixmp.com/templates/image/930c7858f25ab4b509c2c7642926e551ce31d5ab621f3d49e6251daed6cd8c511683021255495.jpg/v1/fill/w_1076%2Ch_606%2Cq_90%2Cusm_0.60_1.00_0.01/930c7858f25ab4b509c2c7642926e551ce31d5ab621f3d49e6251daed6cd8c511683021255495.webp" alt="Template 2" class="w-full h-72 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Beauty Salon</h3>
+                        <p class="text-gray-600">A beauty salon template with clean and modern design.</p>
+                    </div>
+                </div>
+                <div class="border rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images-wixmp-530a50041672c69d335ba4cf.wixmp.com/templates/image/2c1c9d6532aa6602a9d161dee53accf4d66beef2ad7874835eaebea0b810eaea1595331247135.jpg/v1/fill/w_1076%2Ch_606%2Cq_90%2Cusm_0.60_1.00_0.01/2c1c9d6532aa6602a9d161dee53accf4d66beef2ad7874835eaebea0b810eaea1595331247135.webp" 
+                        alt="Shoe Store" 
+                        class="w-full h-290 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Shoe Store</h3>
+                        <p class="text-gray-600">A sleek design for showcasing shoes and footwear in an online store.</p>
+                    </div>
+                </div>
+
+                <div class="border rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images-wixmp-530a50041672c69d335ba4cf.wixmp.com/templates/image/d96b31b1341557d4c44e31458d92737acde303c350ace6eb9d750014c6bdbbec1734429045511.jpg/v1/fill/w_1076%2Ch_606%2Cq_90%2Cusm_0.60_1.00_0.01/d96b31b1341557d4c44e31458d92737acde303c350ace6eb9d750014c6bdbbec1734429045511.webp" 
+                        alt="Real Estate Landing Page" 
+                        class="w-full h-72 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Real Estate Landing Page</h3>
+                        <p class="text-gray-600">A stunning landing page for real estate showcasing properties.</p>
+                    </div>
+                </div>
+                
+
+                <div class="border rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images-wixmp-530a50041672c69d335ba4cf.wixmp.com/templates/image/31400cb9b9570a272ca5f670b468d8c9bb373596b06af92922bae97b4917daed1712484689276.jpg/v1/fill/w_1076%2Ch_606%2Cq_90%2Cusm_0.60_1.00_0.01/31400cb9b9570a272ca5f670b468d8c9bb373596b06af92922bae97b4917daed1712484689276.webp" 
+                        alt="Business Consultant" 
+                        class="w-full h-72 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Business Consultant</h3>
+                        <p class="text-gray-600">A template for business consultants to showcase their services.</p>
+                    </div>
+                </div>
+            
+
+                <div class="border rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images-wixmp-530a50041672c69d335ba4cf.wixmp.com/templates/image/120b7a83848f3f16a10e40459d8761ef3b1c5fbc2b3fe5dddab41932912a25341733214345506.jpg/v1/fill/w_1076%2Ch_606%2Cq_90%2Cusm_0.60_1.00_0.01/120b7a83848f3f16a10e40459d8761ef3b1c5fbc2b3fe5dddab41932912a25341733214345506.webp" 
+                        alt="Shoe Store" 
+                        class="w-full h-290 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Shoe Store</h3>
+                        <p class="text-gray-600">A sleek design for showcasing shoes and footwear in an online store.</p>
+                    </div>
+                </div>
+                <div class="border rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images-wixmp-530a50041672c69d335ba4cf.wixmp.com/templates/image/87a588f8565e5a33f16136fdf08891ffffc7e16e271ef2d0758dec18525b23de1660748279331.jpg/v1/fill/w_1076%2Ch_606%2Cq_90%2Cusm_0.60_1.00_0.01/87a588f8565e5a33f16136fdf08891ffffc7e16e271ef2d0758dec18525b23de1660748279331.webp" 
+                        alt="Coming Soon Landing Page" 
+                        class="w-full h-72 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Coming Soon Landing Page</h3>
+                        <p class="text-gray-600">A stylish landing page that tells visitors when your site will be ready.</p>
+                    </div>
+                </div>
+                
+                <div class="border rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images-wixmp-530a50041672c69d335ba4cf.wixmp.com/templates/image/4586686c2c98e87626e0b4dcf30f3bc7806792ab7e37513b0eb3c61a9b297bd11712482087505.jpg/v1/fill/w_1076%2Ch_606%2Cq_90%2Cusm_0.60_1.00_0.01/4586686c2c98e87626e0b4dcf30f3bc7806792ab7e37513b0eb3c61a9b297bd11712482087505.webp" 
+                        alt="Restaurant Template" 
+                        class="w-full h-72 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Restaurant</h3>
+                        <p class="text-gray-600">A beautiful restaurant template designed to showcase your menu and atmosphere.</p>
+                    </div>
+                </div>
+            
+                <div class="border rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images-wixmp-530a50041672c69d335ba4cf.wixmp.com/templates/image/d7ceedae92a0f5648d36b626e1d69954f0aaaf8a71319993b81990967ad9727b1733059239832.jpg/v1/fill/w_1076%2Ch_606%2Cq_90%2Cusm_0.60_1.00_0.01/d7ceedae92a0f5648d36b626e1d69954f0aaaf8a71319993b81990967ad9727b1733059239832.webp" 
+                        alt="Roofing Services" 
+                        class="w-full h-290 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Roofing Services</h3>
+                        <p class="text-gray-600">A professional template for roofing services, featuring a quote form and service details.</p>
+                    </div>
+                </div>
+                <div class="border rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images-wixmp-530a50041672c69d335ba4cf.wixmp.com/templates/image/3b2a97a89809eaf8ef1d0260365ec60296730f21c3f65e0026b4e884a0c1c7701622022079679.jpg/v1/fill/w_1076%2Ch_606%2Cq_90%2Cusm_0.60_1.00_0.01/3b2a97a89809eaf8ef1d0260365ec60296730f21c3f65e0026b4e884a0c1c7701622022079679.webp" 
+                        alt="AI Company" 
+                        class="w-full h-72 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800">AI Company</h3>
+                        <p class="text-gray-600">Discover the future of mobility with cutting-edge self-driving technology.</p>
+                    </div>
+                </div>
+                
+                <div class="border rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images-wixmp-530a50041672c69d335ba4cf.wixmp.com/templates/image/2ccff57ea3cb40c5a922a7d3c1166664521e10c37e119ae6755cb7462650cb021712501423663.jpg/v1/fill/w_1076%2Ch_606%2Cq_90%2Cusm_0.60_1.00_0.01/2ccff57ea3cb40c5a922a7d3c1166664521e10c37e119ae6755cb7462650cb021712501423663.webp" 
+                        alt="Cleaning Company" 
+                        class="w-full h-72 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Cleaning Company</h3>
+                        <p class="text-gray-600">Remarkably cleaner. Amazingly simpler. Get your home or office cleaned by professionals.</p>
+                    </div>
+                </div>
+            
+                <div class="border rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images-wixmp-530a50041672c69d335ba4cf.wixmp.com/templates/image/06b575dd5b3c6edddf922bec0978862f51f725cd3a5dc85ccb9cc1d5361b7e011734252577527.jpg/v1/fill/w_1076%2Ch_606%2Cq_90%2Cusm_0.60_1.00_0.01/06b575dd5b3c6edddf922bec0978862f51f725cd3a5dc85ccb9cc1d5361b7e011734252577527.webp" 
+                        alt="Digital Marketing Consultant" 
+                        class="w-full h-290 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Digital Marketing Consultant</h3>
+                        <p class="text-gray-600">Personalized digital marketing solutions that drive success in the AI age.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center items-center py-4 pt-12 pb-16">
+            <nav aria-label="Pagination">
+                <ul class="inline-flex space-x-4">
+                    <li>
+                        <a href="#" class="a">
+                            &laquo;&laquo;
+                        </a>
+                    </li>
+                    <li class="hidden sm:block">
+                        <a href="#" class="b">
+                            &laquo;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="b">
+                            1
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="b">
+                            2
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="b">
+                            3
+                        </a>
+                    </li>
+                    <li class="hidden sm:block">
+                        <a href="#" class="b">
+                            4
+                        </a>
+                    </li>
+                    <li class="hidden sm:block">
+                        <a href="#" class="b">
+                            5
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="b">
+                            ...
+                        </a>
+                    </li>
+                    <li class="hidden sm:block">
+                        <a href="#" class="b">
+                            81
+                        </a>
+                    </li>
+                    <li class="hidden sm:block">
+                        <a href="#" class="b">
+                            &raquo;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="c">
+                            &raquo;&raquo;
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div> 
+        <div class="bg-green-700 text-white py-28">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4">Want Help Picking a Template?</h2>
+                <p class="text-lg mb-6">Get tips for finding the template that’s right for you.</p>
+                <a href="#" class="inline-block bg-white text-green-700 py-2 px-6 rounded-full text-lg font-medium hover:bg-green-200 transition-all">
+                    Help Me Choose
+                </a>
+            </div>
+        </div>               
+    </main>
+    <footer class="w-fullpx-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-sm">
+            <!-- Product Section -->
+            <div class="p-4">
+                <h3 class="font-semibold text-lg mb-4">Product</h3>
+                <ul>
+                    <li class="d"><a href="#">Website Templates</a></li>
+                    <li class="d"><a href="#">Website Builder</a></li>
+                    <li class="d"><a href="#">Website Design</a></li>
+                    <li class="d"><a href="#">Wix Features</a></li>
+                    <li class="d"><a href="#">App Market</a></li>
+                    <li class="d"><a href="#">Web Hosting</a></li>
+                    <li class="d"><a href="#">Domain Names</a></li>
+                    <li class="d"><a href="#">Website Accessibility</a></li>
+                    <li class="d"><a href="#">Mobile App Builder</a></li>
+                </ul>
+            </div>
+    
+            <!-- Solutions Section -->
+            <div class="p-4">
+                <h3 class="font-semibold text-lg mb-4">Solutions</h3>
+                <ul>
+                    <li class="d"><a href="#">Online Store</a></li>
+                    <li class="d"><a href="#">Online Booking</a></li>
+                    <li class="d"><a href="#">Restaurant Website</a></li>
+                    <li class="d"><a href="#">Blog Website</a></li>
+                    <li class="d"><a href="#">Portfolio Website</a></li>
+                    <li class="d"><a href="#">eCommerce Website</a></li>
+                    <li class="d"><a href="#">Wix Studio</a></li>
+                    <li class="d"><a href="#">Enterprise Solutions</a></li>
+                    <li class="d"><a href="#">Student Website</a></li>
+                    <li class="d"><a href="#">Professional Tools</a></li>
+                    <li class="d"><a href="#">Logo Maker</a></li>
+                </ul>
+            </div>
+    
+            <!-- Learn Section -->
+            <div class="p-4">
+                <h3 class="font-semibold text-lg mb-4">Learn</h3>
+                <ul>
+                    <li class="d"><a href="#">Wix Blog</a></li>
+                    <li class="d"><a href="#">Privacy and Security Hub</a></li>
+                    <li class="d"><a href="#">SEO Learning Hub</a></li>
+                    <li class="d"><a href="#">Wix Encyclopedia</a></li>
+                </ul>
+            </div>
+    
+            <!-- Support Section -->
+            <div class="p-4">
+                <h3 class="font-semibold text-lg mb-4">Support</h3>
+                <ul>
+                    <li class="d"><a href="#">Help Center</a></li>
+                    <li class="d"><a href="#">Hire a Professional</a></li>
+                    <li class="d"><a href="#">Report Abuse</a></li>
+                    <li class="d"><a href="#">System Status</a></li>
+                </ul>
+            </div>
+    
+            <!-- Company Section -->
+            <div class="p-4">
+                <h3 class="font-semibold text-lg mb-4">Company</h3>
+                <ul>
+                    <li class="d"><a href="#">Press & Media</a></li>
+                    <li class="d"><a href="#">Investor Relations</a></li>
+                    <li class="d"><a href="#">Wix Capital</a></li>
+                    <li class="d"><a href="#">Accessibility Statement</a></li>
+                    <li class="d"><a href="#">Patent Notice</a></li>
+                    <li class="d"><a href="#">Sitemap</a></li>
+                    <li class="d"><a href="#">Careers</a></li>
+                </ul>
+            </div>
+    
+            <!-- Image Section -->
+            <div class="p-4">
+                <div class="max-w-full h-auto mb-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="71" height="28" fill="none" viewBox="0 0 166 64"><g fill="#000" clipPath="url(#a)"><path d="M165.301 0h-9.131a7.64 7.64 0 0 0-6.323 3.352l-12.212 18.014a.82.82 0 0 1-1.356 0L124.068 3.352A7.64 7.64 0 0 0 117.745 0h-9.131l21.753 32.09L108.734 64h9.131a7.64 7.64 0 0 0 6.323-3.352l12.091-17.836a.82.82 0 0 1 1.356 0l12.091 17.836A7.64 7.64 0 0 0 156.05 64h9.131l-21.634-31.91zM89.828 6.546V64h4.364a6.546 6.546 0 0 0 6.547-6.547V0h-4.364a6.546 6.546 0 0 0-6.547 6.546M81.83 0h-3.885a9.154 9.154 0 0 0-8.928 7.126L60.33 45.318 52.725 9.666C51.318 3.077 44.557-1.367 37.639.544c-4.407 1.217-7.674 4.94-8.627 9.41L21.485 45.27 12.813 7.128A9.16 9.16 0 0 0 3.883 0H0l14.555 63.997h5.515c5.004 0 9.328-3.499 10.372-8.393l9.305-43.664c.114-.542.6-.934 1.153-.934.552 0 1.038.392 1.153.934l9.312 43.667a10.6 10.6 0 0 0 10.373 8.39h5.533z"></path></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h165.305v64H0z"></path></clipPath></defs></svg>
+                </div>
+                <p>The Wix website builder offers a complete solution from enterprise-grade infrastructure and business features to advanced SEO and marketing tools—enabling anyone to create and grow online.</p>
+                <ul class="mt-10">
+                    <li><a class="font-semibold hover:text-gray-600 transition-all" href="#">About</a></li>
+                    <li><a class="font-semibold hover:text-gray-600 transition-all" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto flex justify-between items-center mb-10 border-t-2 border-spacing-0">
+            <div class="flex space-x-6 mt-7 ml-1 md:ml-5 lg:ml-8 xl:ml-10">
+                <a href="#" class="text-white w-12 h-12 rounded-full hover:bg-slate-400 transition-all flex justify-center items-center">
+                    <i class="fab fa-facebook-f w-10 h-10 rounded-full bg-blue-800 grid place-content-center"></i>
+                </a>
+                <a href="#" class="text-white w-12 h-12 rounded-full hover:bg-slate-400 transition-all flex justify-center items-center">
+                    <i class="fab fa-youtube w-10 h-10 rounded-full bg-red-800 grid place-content-center"></i>
+                </a>
+                <a href="#" class="text-white w-12 h-12 rounded-full hover:bg-slate-400 transition-all flex justify-center items-center">
+                    <i class="fab fa-instagram w-10 h-10 rounded-full bg-orange-500 grid place-content-center"></i>
+                </a>
+                <a href="#" class="text-white w-12 h-12 rounded-full hover:bg-slate-400 transition-all flex justify-center items-center">
+                    <i class="fab fa-tiktok w-10 h-10 rounded-full bg-black grid place-content-center"></i>
+                </a>
+                <a href="#" class="text-white w-12 h-12 rounded-full hover:bg-slate-400 transition-all flex justify-center items-center">
+                    <i class="fa-brands fa-x-twitter w-10 h-10 rounded-full bg-black grid place-content-center"></i>
+                </a>
+                <a href="#" class="text-white w-12 h-12 rounded-full hover:bg-slate-400 transition-all flex justify-center items-center">
+                    <i class="fab fa-linkedin-in w-10 h-10 rounded-full bg-black grid place-content-center"></i>
+                </a>
+            </div>
+        
+            <div class="text-sm text-gray-600 flex">
+                <ul class="flex flex-wrap justify-center space-x-6 text-sm font-medium text-gray-700 py-3 px-0 sm:px-10">
+                    <li class="hidden lg:block lg:mt-7 xl:mt-7">
+                        <a href="#" class="hover:text-gray-600 transition-all">Terms of Use</a>
+                    </li>
+                    <li class="border-l border-gray-300 hidden md:block mt-7"></li>
+                    <li class="hidden md:block mt-7">
+                        <a href="#" class="hover:text-gray-400 transition-all">Privacy Policy</a>
+                    </li>
+                    <li class="border-l border-gray-300 hidden md:block mt-7"></li>
+                    <li class="hidden lg:block lg:mt-7 xl:mt-7">
+                        <a href="#" class="hover:text-gray-400 transition-all">&copy; 2006-2025 Wix.com, Inc.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
+</script>
+</html>
