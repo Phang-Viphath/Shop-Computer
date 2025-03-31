@@ -1,31 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.textbar {
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: #4b5563;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-.textbar:hover {
-    color: #3b82f6;
-    transform: scale(1.05);
-}
-.textbar.active {
-    color: #2563eb;
-    font-weight: 600;
-}
-
-.a{
-    @apply px-4 py-2 pt-4 pb-4 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100;
-}
-.b{
-    @apply px-4 py-2 pt-4 pb-4 text-sm font-medium text-gray-700 bg-white border border-gray-300 hover:bg-gray-100;
-}
-.c{
-    @apply px-4 py-2 pt-4 pb-4 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100;
-}
-.d{
-    @apply pb-5 hover:text-blue-700 transition-all font-medium;
-}
