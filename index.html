@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Shop in Phath</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="Phath" href="me1.ico">
+</head>
+<body>
+    <header class="bg-black border-b-4 border-yellow-500 text-white py-4 px-5">
+        <div class="container mx-auto flex items-center justify-around flex-wrap">
+            <div class="flex items-center space-x-2 w-full md:w-auto justify-between md:justify-start">
+                <img src="me1.ico" alt="Logo" class="h-6">  
+                <span class="text-lg font-bold pl-2">COMPUTER SHOP IN PHATH</span>
+                <button class="md:hidden text-white text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">☰</button>
+            </div>
+            <div class="flex items-center border border-gray-300 rounded-lg overflow-hidden w-full md:w-auto mt-2 md:mt-0">
+                <input type="text" placeholder="Search" class="px-3 py-1 text-black outline-none w-full md:w-auto">
+                <button class="bg-yellow-500 px-4 py-1">SEARCH</button>
+            </div>
+            <div class="flex items-center space-x-4 w-full md:w-auto justify-between md:justify-start mt-2 md:mt-0">
+                <div class="flex items-center space-x-2">
+                    <span class="text-xl">&#9742;</span>
+                    <span>CONTACT<br><strong>096-361-2863</strong></span>
+                </div>
+                <div class="relative">
+                    <span class="text-2xl">&#128717;</span>
+                    <span class="absolute -top-2 -right-2 bg-yellow-500 text-black text-xs px-2 py-0.5 rounded-full">0</span>
+                </div>
+            </div>            
+        </div>
+        <nav id="mobile-menu" class="hidden md:flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 w-full md:w-auto text-center md:text-left justify-center">
+            <a href="#MACBOOK" class="flex items-center justify-center space-x-1 hover:bg-yellow-500 hover:text-white px-4 py-2 rounded transition duration-300 ease-in-out">
+                <span>&#128187;</span> <span>LAPTOP</span>
+            </a>
+            <a href="#DESKTOP" class="flex items-center justify-center space-x-1 hover:bg-yellow-500 hover:text-white px-4 py-2 rounded transition duration-300 ease-in-out">
+                <span>&#128421;</span> <span>DESKTOP</span>
+            </a>
+            <a href="#Printer" class="flex items-center justify-center space-x-1 hover:bg-yellow-500 hover:text-white px-4 py-2 rounded transition duration-300 ease-in-out">
+                <span>&#127918;</span> <span>GAMING</span>
+            </a>
+            <a href="#Audio" class="flex items-center justify-center space-x-1 hover:bg-yellow-500 hover:text-white px-4 py-2 rounded transition duration-300 ease-in-out">
+                <span>&#127911;</span> <span>PERIPHERAL</span>
+            </a>
+            <a href="#PC_COMPONENTS" class="flex items-center justify-center space-x-1 hover:bg-yellow-500 hover:text-white px-4 py-2 rounded transition duration-300 ease-in-out">
+                <span>&#128295;</span> <span>PC BUILDER</span>
+            </a>
+            <a href="#" class="flex items-center justify-center space-x-1 hover:bg-yellow-500 hover:text-white px-4 py-2 rounded transition duration-300 ease-in-out">
+                <span>&#128221;</span> <span>BLOGS</span>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div class="w-full bg-white px-4 md:px-8 flex justify-center">
+            <div class="w-10/12 text-white py-2">
+                <div class="flex flex-wrap justify-between items-center gap-12">
+                    <div class="flex space-x-7 items-center">
+                        <span class="text-gray-400 text-3xl ml-3">$</span>
+                        <div>
+                            <h1 class="text-[#545552] font-semibold text-lg">FREE QUOTATION</h1>
+                            <p class="text-gray-500 text-sm">Contact our sales person for special price</p>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4 items-center">
+                        <span class="text-gray-400 text-3xl">📅</span>
+                        <div>
+                            <h1 class="text-[#545552] font-semibold text-lg">PROFESSIONAL CONSULTING</h1>
+                            <p class="text-gray-500 text-sm">With our experienced products manager</p>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4 items-center">
+                        <span class="text-gray-400 text-3xl">🎁</span>
+                        <div>
+                            <h1 class="text-[#545552] font-semibold text-lg">FREE DELIVERY</h1>
+                            <p class="text-gray-500 text-sm">Within Phnom Penh town center</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="max-w-7xl mx-auto p-4 flex flex-col lg:flex-row gap-4">
+        <div class="w-full lg:w-1/4 bg-white shadow-lg rounded-lg">
+            <div class="p-4 bg-black text-white flex items-center justify-between">
+                <span class="font-bold">CATEGORIES</span>
+                <button id="menuToggle" class="lg:hidden text-yellow-500 text-2xl">☰</button>
+            </div>
+            <ul id="menuList" class="p-4 space-y-3 hidden lg:block">
+                <li class="flex items-center space-x-3 text-gray-700 hover:text-yellow-500 cursor-pointer">
+                    <span>💻</span><span><a href="#MACBOOK">Laptop</a></span>
+                </li>
+                <li class="flex items-center space-x-3 text-gray-700 hover:text-yellow-500 cursor-pointer">
+                    <span>🖥️</span><span><a href="#DESKTOP">Desktop</a></span>
+                </li>
+                <li class="flex items-center space-x-3 text-gray-700 hover:text-yellow-500 cursor-pointer">
+                    <span>🖨️</span><span><a href="#Printer">Printer & Scanner</a></span>
+                </li>
+                <li class="flex items-center space-x-3 text-gray-700 hover:text-yellow-500 cursor-pointer">
+                    <span>🎧</span><span><a href="#Audio">Audio Device</a></span>
+                </li>
+                <li class="flex items-center space-x-3 text-gray-700 hover:text-yellow-500 cursor-pointer">
+                    <span>🛠️</span><span><a href="#PC_COMPONENTS">PC Components</a></span>
+                </li>
+                <li class="flex items-center space-x-3 text-gray-700 hover:text-yellow-500 cursor-pointer">
+                    <span>🔒</span><span>Security System</span>
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <span>⚡ ORICO 4 PORTS USB HUB</span> <span class="text-red-500">From $12</span>
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <span>💾 SAMSUNG 990 PRO 1TB</span> <span class="text-red-500">From $110</span>
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <span>🔋 APC BACK-UPS 750VA</span> <span class="text-red-500">From $125</span>
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <span>🖥️ MSI MAG B850</span> <span class="text-red-500">From $235</span>
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <span>🎥 ACER PROJECTOR</span> <span class="text-red-500">From $365</span>
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <span>💻 CORE ULTRA 9</span> <span class="text-red-500">From $569</span>
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <button class="mt-3 px-2 py-2 bg-[#26c9fc] text-white rounded-md"><a href="https://t.me/PHANG_VIPHATH">Telegram</a></button>
+                    <button class="mt-3 px-6 py-2 bg-[#060b0d] text-white rounded-md"><a href="https://www.tiktok.com/@01001001.01010100">Tiktok</a></button>
+                    <button class="mt-3 px-2 py-2 bg-[#0865ff] text-white rounded-md"><a href="https://www.facebook.com/share/1AK2PkuQH2/?mibextid=wwXIfr">Facebook</a></button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="w-full lg:w-3/4">
+            <div class="relative w-full overflow-hidden rounded-lg shadow-lg">
+                <div class="flex transition-transform duration-500 ease-in-out">
+                    <img src="https://www.goldonecomputer.com/image/cache/catalog/Banner%20and%20Slide/250221%20MSI%20Prestige%2016%20AI+-915x420.jpg" class="w-full" alt="Banner 1">
+                </div>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-4">
+                <button class="bg-black text-yellow-500 p-3 rounded-lg flex items-center justify-center gap-2">
+                    <span>🎮</span> GAMING LAPTOP
+                </button>
+                <button class="bg-black text-yellow-500 p-3 rounded-lg flex items-center justify-center gap-2">
+                    <span>💻</span> MACBOOK
+                </button>
+                <button class="bg-black text-yellow-500 p-3 rounded-lg flex items-center justify-center gap-2">
+                    <span>🖥️</span> DESIGNER DESKTOP
+                </button>
+                <button class="bg-black text-yellow-500 p-3 rounded-lg flex items-center justify-center gap-2">
+                    <span>🎧</span> GAMING GEAR
+                </button>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+                <img src="https://www.goldonecomputer.com/image/catalog/Banner and Slide/230831 Security 1.jpg" class="w-full rounded-lg shadow-lg" alt="Ad 1">
+                <img src="https://www.goldonecomputer.com/image/catalog/Banner and Slide/230831 Security 2.jpg" class="w-full rounded-lg shadow-lg" alt="Ad 2">
+            </div>
+        </div>
+
+    </div>
+
+    <button class="fixed bottom-6 right-6 bg-yellow-500 text-white px-4 py-3 rounded-full shadow-lg flex items-center">
+        💬 Chat with us
+    </button>
+
+    <script>
+        document.getElementById('menuToggle').addEventListener('click', function () {
+            document.getElementById('menuList').classList.toggle('hidden');
+        });
+    </script>
+    <div class="max-w-7xl mx-auto p-4 flex flex-col lg:flex-row gap-4">
+        <div class="w-full lg:w-1/4 bg-white shadow-lg rounded-lg p-4">
+            <h2 class="text-lg font-semibold border-b pb-2">FEATURE PRODUCT LINE</h2>
+            <ul class="mt-4 space-y-4">
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side%20Bar/250223%20ORICO%204%20ports.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250227 Samsung 990 Pro.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/FeatureLaptop_1.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250223 APC Back UPS.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250222 ACER Aspire Lite AL14.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250222 ACER Nitro V15.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250222 LENOVO LOQ 15IAX9.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250222 ROG Strix G16 G614JU.jpg" alt="">
+                </li>
+                <br><br><br><br><br>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/FeatureProduct_1.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250227 MSI PRO MP275Q.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250223 Razer DeathAdder.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250227 AMD Ryzen 7 7800X 3D.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250227 AMD Ryzen 7 7800X 3D.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250223 ONIKUMA G55.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250227 AOC AGON AG276QZD2.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250223 HP LASERJET PRO.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250223 UBIQUITI UniFi.jpg" alt="">
+                </li>
+            </ul>
+            <ul class="mt-4 space-y-4">
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side%20Bar/250223%20ORICO%204%20ports.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250227 Samsung 990 Pro.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/FeatureLaptop_1.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250223 APC Back UPS.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250222 ACER Aspire Lite AL14.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250222 ACER Nitro V15.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250227 Samsung 990 Pro.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/FeatureLaptop_1.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250223 APC Back UPS.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250222 ACER Aspire Lite AL14.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250222 ACER Nitro V15.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250222 LENOVO LOQ 15IAX9.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250222 ROG Strix G16 G614JU.jpg" alt="">
+                </li>
+                <br><br><br><br><br>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/FeatureProduct_1.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250227 MSI PRO MP275Q.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250223 Razer DeathAdder.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250227 AMD Ryzen 7 7800X 3D.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250223 ONIKUMA G55.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250227 AOC AGON AG276QZD2.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250223 HP LASERJET PRO.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250223 UBIQUITI UniFi.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250223 Razer DeathAdder.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250227 AMD Ryzen 7 7800X 3D.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250223 ONIKUMA G55.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250227 AOC AGON AG276QZD2.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250223 HP LASERJET PRO.jpg" alt="">
+                </li>
+                <li class="flex items-center justify-between border-b pb-2">
+                    <img src="https://www.goldonecomputer.com/image/catalog/Side Bar/250223 UBIQUITI UniFi.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="w-full lg:w-3/4">
+            <div>
+                <h2 class="text-lg font-semibold bg-yellow-500 text-white px-4 py-2 inline-block">FROM THE BLOG</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
+                    <div class="bg-white shadow-lg rounded-lg p-3">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Blogs/Router-Cover%E2%80%8B%E2%80%8B%20Website-914x510.jpg" alt="Blog 1" class="w-full rounded-md">
+                        <p class="text-xs text-yellow-500 mt-2">29 Mar 2025</p>
+                        <p class="text-sm font-semibold mt-1">[VIDEO] WiFi 6 Router Review</p>
+                    </div>
+                    <div class="bg-white shadow-lg rounded-lg p-3">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Blogs/Cover%20Website-914x510.jpg" alt="Blog 2" class="w-full rounded-md">
+                        <p class="text-xs text-yellow-500 mt-2">22 Mar 2025</p>
+                        <p class="text-sm font-semibold mt-1">[VIDEO] Laptop OLED 3K Review</p>
+                    </div>
+                    <div class="bg-white shadow-lg rounded-lg p-3">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Blogs/250313%20RTX%205070-914x510.jpg" alt="Blog 3" class="w-full rounded-md">
+                        <p class="text-xs text-yellow-500 mt-2">13 Mar 2025</p>
+                        <p class="text-sm font-semibold mt-1">[VIDEO] Should you upgrade RTX5070?</p>
+                    </div>
+                </div>
+                <button class="mt-3 px-4 py-2 bg-yellow-500 text-white rounded-md">VIEW ALL</button>
+            </div>
+            <div class="mt-6">
+                <h2 id="DESKTOP" class="text-lg font-semibold bg-yellow-500 text-white px-4 py-2 inline-block">DESKTOP</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-4">
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/GOC%20SR/2025/ASUS/NUC/RNUC13VYKI50006-1-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">Asus NUC i3 1315U</p>
+                        <p class="text-gray-500 text-xs">8GB / SSD 256GB</p>
+                        <p class="text-green-600 font-semibold">$449.00</p>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>                    
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/GOC%20SR/2025/ASUS/NUC/RNUC12WSHI70000-1-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">Asus NUC i7 1260P</p>
+                        <p class="text-gray-500 text-xs">16GB / SSD 512GB</p>
+                        <p class="text-green-600 font-semibold">$719.00</p>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/GOC%20SR/2025/Dell/Desktop/Dell-OptiPlex-7020SFF-1-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">Dell OptiPlex i5 14500</p>
+                        <p class="text-gray-500 text-xs">8GB / SSD 512GB</p>
+                        <p class="text-green-600 font-semibold">$599.00</p>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/GOC%20SR/2025/ASUS/NUC/BNUC11ATKPE0000-1-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">Asus NUC 11ATKPE0000</p>
+                        <p class="text-gray-500 text-xs">8GB / SSD 256GB </p>
+                        <p class="text-green-600 font-semibold">$269.00</p>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                </div>
+                <button class="mt-3 px-4 py-2 bg-yellow-500 text-white rounded-md">VIEW ALL</button>
+            </div>
+            <div class="mt-6">
+                <h2 id="MACBOOK" class="text-lg font-semibold bg-yellow-500 text-white px-4 py-2 inline-block">MACBOOK & LAPTOP</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-4">
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/GOC%20SR/2025/APPLE/Air/Mac-air-M4-15-Sky-Blue-1-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">MacBook Air 15</p>
+                        <p class="text-gray-500 text-xs">M4 Chip / 16GB / SSD 512GB /15.2</p>
+                        <p class="text-green-600 font-semibold">$1,559.00</p>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>                    
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/APPLE%20LAPTOP/2023/Mac%20air%20/MacBook-Air-15-Space-Grey-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">MacBook Air 15</p>
+                        <p class="text-gray-500 text-xs">M3 Chip / 16GB / SSD 256GB / 15</p>
+                        <p class="text-green-600 font-semibold">$1,359.00</p>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/GOC%20SR/2025/APPLE/Air/Mac-air-M4-13-Midnight-1-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">MacBook Air 13</p>
+                        <p class="text-gray-500 text-xs">M4 Chip / 16GB / SSD 256GB /13.6</p>
+                        <p class="text-green-600 font-semibold">$1,159.00</p>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/GOC%20SR/2025/LENOVO/Notebook%20/ThinkPad-T14-Gen-5-1-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">Lenovo ThinkPad T14 Gen 5</p>
+                        <p class="text-gray-500 text-xs">Ultra 7 155U / 16GB</p>
+                        <p class="text-green-600 font-semibold">$1,159.00</p>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                </div>
+                <button class="mt-3 px-4 py-2 bg-yellow-500 text-white rounded-md">VIEW ALL</button>
+                
+            </div>
+            <div class="mt-6">
+                <h2 id="LATEST_PRODUCT" class="text-lg font-semibold bg-yellow-500 text-white px-4 py-2 inline-block">LATEST PRODUCT</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-4">
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/Huawei/Access%20Point/AP361-330x409.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">Huawei AP362E Wireless Ceiling </p>
+                        <p class="text-gray-500 text-xs">2.975Gbps WIFI 6 Access Point</p>
+                        <p class="text-green-600 font-semibold">$95.00</p>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>                    
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/Huawei/Access%20Point/AP160-1-330x409.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">Huawei AP160 Wireless</p>
+                        <p class="text-gray-500 text-xs">Wall Mounted 1.775Gbps WIFI 6 Access Point</p>
+                        <p class="text-green-600 font-semibold">$75.00</p>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/Huawei/Access%20Point/AP266-330x409.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">Huawei AP266 Wireless</p>
+                        <p class="text-gray-500 text-xs">Wall plate 2.975Gbps WIFI 6 Access Point</p>
+                        <p class="text-green-600 font-semibold">$110.00</p>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/Huawei/Switch/S220S-24P4J-330x409.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">Huawei S310S-24P4J</p>
+                        <p class="text-gray-500 text-xs">24Port L3 POE+ Management Gigabit Switch</p>
+                        <p class="text-green-600 font-semibold">$320.00</p>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                </div>
+                <button class="mt-3 px-4 py-2 bg-yellow-500 text-white rounded-md">VIEW ALL</button>
+                
+            </div>
+            <div class="mt-6">
+                <h2 id="MONITOR" class="text-lg font-semibold bg-yellow-500 text-white px-4 py-2 inline-block">MONITOR</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-4">
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/Monitor%20MSI/PRO-MP273U-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">MSI PRO MP273U</p>
+                        <p class="text-gray-500 text-xs">27" / 4K / IPS / 60Hz / 3 Years</p>
+                        <p class="text-green-600 font-semibold">$199.00</p>
+                        <br><br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>                    
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/Monitor%20Samsung/G6-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">Samsung Odyssey OLED</p>
+                        <p class="text-gray-500 text-xs">G6 G60SD (Pivot) 27" / OLED</p>
+                        <p class="text-green-600 font-semibold">$910.00</p>
+                        <br><br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/Monitor%20Samsung/S3-2025-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">Samsung Essential Monitor</p>
+                        <p class="text-gray-500 text-xs">S3 (S30GD) 2025 24"</p>
+                        <p class="text-green-600 font-semibold">$109.00</p><br><br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/Monitor%20Samsung/G6-OLED-240Hz-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">Samsung Odyssey OLED G6</p>
+                        <p class="text-gray-500 text-xs">(Pivot) 27" / OLED</p>
+                        <p class="text-green-600 font-semibold">$699.00</p>
+                        <br><br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                </div>
+                <button class="mt-3 px-4 py-2 bg-yellow-500 text-white rounded-md">VIEW ALL</button>
+                
+            </div>
+            <div class="mt-6">
+                <h2 id="PC_COMPONENTS" class="text-lg font-semibold bg-yellow-500 text-white px-4 py-2 inline-block">PC COMPONENTS</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-4">
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/PSU/FSP1650W1-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">FSP Hydro PTM PRO(ATX3.1)</p>
+                        <p class="text-gray-500 text-xs"> 1650W Max Power 1600W</p>
+                        <p class="text-green-600 font-semibold">$299.00</p>
+                        <br><br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>                    
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/PSU/PMT-White-750W-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">darkFlash PMT 850W ATX 3.1</p>
+                        <p class="text-gray-500 text-xs">White 850W / Full Mo</p>
+                        <p class="text-green-600 font-semibold">$79.00</p>
+                        <br><br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/PSU/HV-Pro-650W-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">Power Supply FSP HV Pro</p>
+                        <p class="text-gray-500 text-xs">85+ 650 650W / 80 Plus</p>
+                        <p class="text-green-600 font-semibold">$45.00</p><br><br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/PSU/FSP-VITA-GD-850W-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">Power FSP VITA GD 850W GOLD</p>
+                        <p class="text-gray-500 text-xs">Max Power 850W/ 80</p>
+                        <p class="text-green-600 font-semibold">$95.00</p>
+                        <br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                </div>
+                <button class="mt-3 px-4 py-2 bg-yellow-500 text-white rounded-md">VIEW ALL</button>
+            </div>
+            <div class="mt-6">
+                <h2 class="text-lg font-semibold bg-yellow-500 text-white px-4 py-2 inline-block">GAMING GEAR</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-4">
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/Gaming%20Gear/Gaming%20Mouse/CW929-1-200x200.png" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">MOUSE ONIKUMA CW929 USB</p>
+                        <p class="text-gray-500 text-xs">GAMING RGB</p>
+                        <p class="text-green-600 font-semibold">$12.00</p>
+                        <br><br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>                    
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/Gaming%20Gear/Gaming%20Headset/blackshark-v2-x-1-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">Razer BlackShark V2 X Gaming</p>
+                        <p class="text-gray-500 text-xs">Headset 7.1 Surround</p>
+                        <p class="text-green-600 font-semibold">$55.00</p>
+                        <br><br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/Gaming%20Gear/Gaming%20Mouse/G502-X-2-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">Logitech G502 X Gaming</p>
+                        <p class="text-gray-500 text-xs">Mouse White</p>
+                        <p class="text-green-600 font-semibold">$79.00</p><br><br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/Gaming%20Gear/Gaming%20Mouse/G502-X-4-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">Logitech G502 X Gaming Mouse</p>
+                        <p class="text-gray-500 text-xs">Mouse</p>
+                        <p class="text-green-600 font-semibold">$75.00</p>
+                        <br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                </div>
+                <button class="mt-3 px-4 py-2 bg-yellow-500 text-white rounded-md">VIEW ALL</button>
+            </div>
+            <div class="mt-6">
+                <h2 class="text-lg font-semibold bg-yellow-500 text-white px-4 py-2 inline-block">ACCESSORIES</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-4">
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/Accessories%20Converter/ORICO/PW11-10P-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">ORICO Type-C 10-in-1 5Gbps</p>
+                        <p class="text-gray-500 text-xs">Multifunction Docking</p>
+                        <p class="text-green-600 font-semibold">$35.00</p>
+                        <br><br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>                    
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/Accessories%20Converter/ORICO/MC-U602P-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">ORICO 6-in-1 Type-C Multifunction</p>
+                        <p class="text-gray-500 text-xs">Docking Station</p>
+                        <p class="text-green-600 font-semibold">$35.00</p>
+                        <br><br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/Accessories%20Converter/ORICO/MC-U501P-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">ORICO 5-in-1 Type-C Multifunction</p>
+                        <p class="text-gray-500 text-xs">Docking Station</p>
+                        <p class="text-green-600 font-semibold">$29.00</p><br><br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/Accessories%20Converter/ORICO/2CT-8HR-2-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">ORICO 8 IN 1 Type-C Multifunctional</p>
+                        <p class="text-gray-500 text-xs">Docking statio</p>
+                        <p class="text-green-600 font-semibold">$35.00</p>
+                        <br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                </div>
+                <button class="mt-3 px-4 py-2 bg-yellow-500 text-white rounded-md">VIEW ALL</button>
+            </div>
+            <div class="mt-6">
+                <h2 id="Audio" class="text-lg font-semibold bg-yellow-500 text-white px-4 py-2 inline-block">AUDIO DEVICE</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-4">
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/Gaming%20Gear/Gaming%20Headset/Razer-Seiren-V3-Mini-USB-Microphone-Condenser-Mic-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">Razer Seiren V3 Mini USB</p>
+                        <p class="text-gray-500 text-xs">Microphone</p>
+                        <p class="text-green-600 font-semibold">$59.00</p>
+                        <br><br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>                    
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/Audio%20Device/Headset/H540-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">Logitech H540 USB Headset</p>
+                        <p class="text-gray-500 text-xs">Noise Cancelling</p>
+                        <p class="text-green-600 font-semibold">$36.00</p>
+                        <br><br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/Speaker/Speaker%20Xdobo/240607%20XDOBO%20SINOBAND%20Dignity%202024-4-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">XDOBO Sinoband Dignity 2024​ 50W</p>
+                        <p class="text-gray-500 text-xs">Portable Speaker</p>
+                        <p class="text-green-600 font-semibold">$43.00</p><br><br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/Speaker/Speaker%20Xdobo/241004%20BMTL%20Grammy%202-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">XDOBO BMTL Grammy 5W portable</p>
+                        <p class="text-gray-500 text-xs">speaker</p>
+                        <p class="text-green-600 font-semibold">$15.00</p>
+                        <br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                </div>
+                <button class="mt-3 px-4 py-2 bg-yellow-500 text-white rounded-md">VIEW ALL</button>
+            </div>
+            <div class="mt-6">
+                <h2 class="text-lg font-semibold bg-yellow-500 text-white px-4 py-2 inline-block">PROJECTOR</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-4">
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/Projector%20Epson/EB-L260F-3-200x200.png" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">Epson EB-L260F-Built-InWireles-WXGA</p>
+                        <p class="text-gray-500 text-xs">1920x1080</p>
+                        <p class="text-green-600 font-semibold">$1,349.00</p>
+                        <br><br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>                    
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/Projector%20Epson/EB-2256U%20(1)-200x200.png" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">Epson EB-2250U 3LCD Projector WUXGA</p>
+                        <p class="text-gray-500 text-xs">5000 ANSI Lum</p>
+                        <p class="text-green-600 font-semibold">$1,499.00</p>
+                        <br><br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/Projector%20Epson/H8c6ee81806fc48308e791c45309d17f6j.jpg_720x720q50-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">Projector RTAKO A4300PRO</p>
+                        <p class="text-gray-500 text-xs">Mouse White</p>
+                        <p class="text-green-600 font-semibold">$150.00</p><br><br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/Projector%20Epson/FH01-200x200.png" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">Epson CO-FH01 LCD Projector WXGA</p>
+                        <p class="text-gray-500 text-xs">3000 ANSI Lumens</p>
+                        <p class="text-green-600 font-semibold">$419.00</p>
+                        <br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                </div>
+                <button class="mt-3 px-4 py-2 bg-yellow-500 text-white rounded-md">VIEW ALL</button>
+            </div>
+            <div class="mt-6">
+                <h2 id="Printer" class="text-lg font-semibold bg-yellow-500 text-white px-4 py-2 inline-block">PRINTER AND SCANNER</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-4">
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/HP%20Printer%20/M570DW-2-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">HP Color LaserJet MFP M570DW A4</p>
+                        <p class="text-gray-500 text-xs">Print, Copy, Scan</p>
+                        <p class="text-green-600 font-semibold">$1,029.00</p>
+                        <br><br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>                    
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/HP%20Printer%20/M283Fdw1-200x200.png" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">HP Color LaserJet MFP M283FDN A4</p>
+                        <p class="text-gray-500 text-xs">Print, Copy, Scan</p>
+                        <p class="text-green-600 font-semibold">$359.00</p>
+                        <br><br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/HP%20Printer%20/M137FNW-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">HP LASERJET PRO MFP M139FNW A4 B/W</p>
+                        <p class="text-gray-500 text-xs">Print, Copy, Sc</p>
+                        <p class="text-green-600 font-semibold">$225.00</p><br><br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/HP%20Printer%20/M611DN-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">HP LaserJet Enterprise M611DN A4</p>
+                        <p class="text-gray-500 text-xs">B/W Print Only</p>
+                        <p class="text-green-600 font-semibold">$749.00</p>
+                        <br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                </div>
+                <button class="mt-3 px-4 py-2 bg-yellow-500 text-white rounded-md">VIEW ALL</button>
+            </div>
+            <div class="mt-6">
+                <h2 class="text-lg font-semibold bg-yellow-500 text-white px-4 py-2 inline-block">DIGITAL STORAGE</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-4">
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/Synology/BST150-4T-200x200.png" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">Synology 4TB BeeStation Personal</p>
+                        <p class="text-gray-500 text-xs">Cloud (BST150-4T)</p>
+                        <p class="text-green-600 font-semibold">$295.00</p>
+                        <br><br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>                    
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/Synology/Synology-USB-Station-2-USB-NAS-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">Synology USB Station 2 USB NAS</p>
+                        <p class="text-gray-500 text-xs">USB NAS</p>
+                        <p class="text-green-600 font-semibold">$120.00</p>
+                        <br><br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/Synology/SYNOLOGY%20Accessories/SAT5220-1920G-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">Synology 1.92TB 2.5” Enterprise-Grade</p>
+                        <p class="text-gray-500 text-xs">SATA SSD</p>
+                        <p class="text-green-600 font-semibold">$585.00</p><br><br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                    <div class="bg-white p-3 shadow-lg rounded-lg text-center group">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Products/Synology/SYNOLOGY%20Accessories/D4ECSO-2400-8G-200x200.jpg" alt="Product Image" class="w-full rounded-md">
+                        <p class="text-sm font-semibold mt-2">Synology RAM 4GB module for</p>
+                        <p class="text-gray-500 text-xs">RS2418(RP)+, RS2818RP+</p>
+                        <p class="text-green-600 font-semibold">$105.00</p>
+                        <br>
+                        <div class="flex justify-center space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-yellow-500 hover:text-white">
+                                🛒
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-blue-500 hover:text-white">
+                                👁️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-red-500 hover:text-white">
+                                ❤️
+                            </button>
+                            <button class="p-2 bg-gray-200 rounded-md hover:bg-black hover:text-white">
+                                ⚫
+                            </button>
+                        </div>
+                    </div>     
+                </div>
+                <button class="mt-3 px-4 py-2 bg-yellow-500 text-white rounded-md">VIEW ALL</button>
+            </div>
+            <div class="bg-white p-4 shadow rounded-lg mt-6">
+                <div class="flex items-center justify-between">
+                    <button class="text-gray-600 text-2xl">&#x276E;</button>
+                    <div class="flex space-x-6 overflow-x-auto">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Icon%20and%20Logo/221219%20Logo%20Hikvision-130x110.png" alt="Microlab" class="h-12">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Icon%20and%20Logo/240214%20Logo%20Acegeek-130x110.png" alt="Microlab" class="h-12">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Icon%20and%20Logo/240214%20Logo%20Microlab-130x110.png" alt="Microlab" class="h-12">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Icon%20and%20Logo/240214%20Logo%20Prolink-130x110.png" alt="Prolink" class="h-12">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Icon%20and%20Logo/Artboard%2017-130x110.png" alt="Epson" class="h-12">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Icon%20and%20Logo/Artboard%2020-130x110.png" alt="DeepCool" class="h-12">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Icon%20and%20Logo/Artboard%202-130x110.png" alt="APC" class="h-12">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Icon%20and%20Logo/240214%20Logo%20Onikuma-130x110.png" alt="APC" class="h-12">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Icon%20and%20Logo/Artboard%2040-130x110.png" alt="APC" class="h-12">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Icon%20and%20Logo/Artboard%2013-130x110.png" alt="APC" class="h-12">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Icon%20and%20Logo/240214%20Logo%20aigo-130x110.png" alt="APC" class="h-12">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Icon%20and%20Logo/Artboard%204-130x110.png" alt="APC" class="h-12">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Icon%20and%20Logo/Artboard%2019-130x110.png" alt="APC" class="h-12">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Icon%20and%20Logo/Artboard%2021-130x110.png" alt="APC" class="h-12">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Icon%20and%20Logo/Artboard%209-130x110.png" alt="APC" class="h-12">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Icon%20and%20Logo/Artboard%206-130x110.png" alt="APC" class="h-12">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Icon%20and%20Logo/221219%20Logo%20Darkflash-130x110.png" alt="APC" class="h-12">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Icon%20and%20Logo/Artboard%208-130x110.png" alt="APC" class="h-12">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Icon%20and%20Logo/Artboard%2016-130x110.png" alt="APC" class="h-12">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Icon%20and%20Logo/Artboard%2024-130x110.png" alt="APC" class="h-12">
+                        <img src="https://www.goldonecomputer.com/image/cache/catalog/Icon%20and%20Logo/Artboard%2037-130x110.jpg" alt="APC" class="h-12">
+                    </div>
+                    <button class="text-gray-600 text-2xl">&#x276F;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="fixed bottom-6 right-6 bg-yellow-500 text-white px-4 py-3 rounded-full shadow-lg flex items-center">
+        <a href="https://t.me/PHANG_VIPHATH">💬 Chat with us</a>
+    </button>
+</main>
+<footer class="bg-gray-800 text-white flex flex-wrap md:justify-around justify-between py-8 border-t-4 border-yellow-500 mt-7 px-4 md:px-16">
+    <ul class="space-y-2 mb-4">
+        <li><a href="#" class="hover:text-yellow-400">Home</a></li>
+        <li><a href="#" class="hover:text-yellow-400">About Us</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Contact Us</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Terms & Conditions</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-yellow-400">FAQ</a></li>
+    </ul>
+    <ul class="space-y-4 flex md:flex-col flex-row gap-4 mb-4">
+        <li><a href="https://www.facebook.com/share/1AK2PkuQH2/?mibextid=wwXIfr" class="text-2xl text-blue-800 hover:text-yellow-400"><i class="bi bi-facebook"></i></a></li>
+        <li><a href="https://t.me/PHANG_VIPHATH" class="text-2xl text-blue-500 hover:text-yellow-400"><i class="bi bi-telegram"></i></a></li>
+        <li><a href="https://www.tiktok.com/@01001001.01010100" class="text-2xl text-black hover:text-yellow-400"><i class="bi bi-tiktok"></i></a></li>
+    </ul>
+    <ul class="space-y-2 mb-4">
+        <li>&copy; 2022 Gold One Computer. All rights reserved.</li>
+        <li><a href="#" class="hover:text-yellow-400">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Terms & Conditions</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Contact Us</a></li>
+    </ul>
+    <ul class="space-y-2 text-center mb-4">
+        <li><img src="me1.ico" alt="Golden Computer" class="w-20 h-20"></li>
+        <li class="text-lg font-semibold">COMPUTER SHOP IN PHATH</li>
+    </ul>
+</footer>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+</html>
